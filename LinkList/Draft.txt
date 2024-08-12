@@ -1,0 +1,30 @@
+package LinkList;
+
+public class Main {
+    public static void main(String[] args) {
+         A a = new A("Narayan");
+         System.out.println(a.name);
+
+         B b = new B("Chavan");
+         System.out.println(b.name);
+    }
+}
+
+// class A {
+//     String name;
+//     int age = 21;
+
+//     //constructor
+
+//     public A (String name) {
+//         this.name = name;
+//     } 
+// }
+
+// class B extends A {
+
+//     public B (String name) {
+//         super(name);
+//     }   
+// }
+
