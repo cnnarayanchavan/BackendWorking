@@ -6,6 +6,29 @@ public class Main {
         Student s3 = new Student(222, 90.90, s2);
         s3.traverseObject();
         
+
+        int a = 10;
+        int ans = changeVar(a);
+        System.out.println("value of a is: "+a);
+
+
+        B b1 = new B();
+        b1.name = "Narayana";
+        System.out.println(b1.name);
+        changeName(b1);
+        System.out.println(b1.name);
+
+        
+    }
+
+    public static void changeName(B b1){
+        b1.name = "Chavannnnnnnnnnn's";
+    }
+
+   
+    public static int changeVar(int a) {
+        a = 100;
+        return a;
     }
 }
 
@@ -35,5 +58,9 @@ class Student {
             cureent = cureent.newStd;
         }
     }
+}
+
+class B {
+    String name;
 }
 

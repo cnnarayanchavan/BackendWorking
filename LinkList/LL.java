@@ -2,29 +2,46 @@ package LinkList;
 
 public class LL {
 
-    Node head;  //reference variable pointing to the fist node in the link list
-    Node tail;  //reference variable pointing to the last node in the link list
-    
+    Node head;  //refering first node in the LL
+    Node tail;  //refering last node in the LL
 
-    //method to add element at first in link list  //addFirst
-    public void addFirst (int data) {
+
+    //Method for adding into the list
+
+    public void addToList(int data){
         Node newNode = new Node(data);
-        newNode.next = head;
-        head = newNode;
+        // check for list is empty or not 
+        if (head == null) {
+            head = newNode;
+        }
+        else{
+            //do not what to change the head 
+            Node temp = head;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = newNode;
+            
+        }
     }
-    
+
+    //Method for displaying node from list
+
+    public void display(){
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " -> ");
+            temp = temp.next;
+        }
+        System.out.println("End");
+    }
 
     class Node {
         int data;
         Node next;
 
-        public Node (int data) {
+        Node (int data) {
             this.data = data;
-            this.next = null;
         }
-    }
-
-
-
-
+    } 
 }
