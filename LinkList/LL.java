@@ -27,7 +27,7 @@ public class LL {
 
     //Method for displaying node from list
 
-    public void display(){
+    public void displayNode(){
         Node temp = head;
         while (temp != null) {
             System.out.print(temp.data + " -> ");
