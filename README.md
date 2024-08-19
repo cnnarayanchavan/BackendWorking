@@ -10,4 +10,4 @@ TASKS:
 5] Stack 
 6] LinkList
 7] Stack Implimentation using LinkList
-8] Searching Sorting 2
+8] Searching Sorting
